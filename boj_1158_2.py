@@ -1,6 +1,6 @@
 # [백준] 1158번 - 요세푸스 문제 (실버4)
 # 리스트 인덱스 활용
-# 2024.03.06 - 34016 KB / 64 ms
+# 2024.03.06 - 31120 KB / 52 ms
 # [O] 구현 / 자료구조 / 큐
 
 # 입력
@@ -25,4 +25,4 @@ for _ in range(N):
     result.append(str(arr.pop(idx)))
 
 # 결과 출력
-print("<",", ".join(result)[:],">", sep='')
+print("<", ", ".join(result), ">", sep="")
