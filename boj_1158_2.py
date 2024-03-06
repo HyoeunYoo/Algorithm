@@ -17,10 +17,12 @@ idx = 0
 # 요세푸스 순열
 result = []
 
+# K 주기의 인덱스로 데이터 제거
 for _ in range(N):
     idx += K - 1
+    
     if idx >= len(arr):
-        idx%= len(arr)
+        idx %= len(arr)
         
     result.append(str(arr.pop(idx)))
 
