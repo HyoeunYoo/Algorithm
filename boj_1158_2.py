@@ -3,8 +3,6 @@
 # 2024.03.06 - 34016 KB / 64 ms
 # [O] 구현 / 자료구조 / 큐
 
-from collections import deque
-
 # 입력
 N, K = map(int, input().split())
 
