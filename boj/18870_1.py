@@ -8,10 +8,9 @@ input = sys.stdin.readline
 # 입력
 N = int(input())
 list1 = list(map(int, input().split()))
-list2 = list(set(list1))
 
-# 정렬
-list2.sort()
+# 중복 제거, 정렬
+list2 = sorted(list(set(list1)))
 
 # {좌표: list2에서의 인덱스} 딕셔너리
 dic = {}    
