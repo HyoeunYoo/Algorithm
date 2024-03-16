@@ -1,6 +1,6 @@
 # [백준] 2805번 - 나무 자르기 (실버 2)
 # 이진 탐색 - 반복문
-# 2024.03.16 - 145212 KB / 4892 ms
+# 2024.03.16 - 143264 KB / 4660 ms
 # [-] 이분탐색 / 매개 변수 탐색
 
 import sys
@@ -19,10 +19,7 @@ while start <= end:
         if t > H:
             sum += t - H
     
-    if sum == M:
-        end = H
-        break
-    elif sum > M:
+    if sum >= M:
         start = H + 1
     else:
         end = H - 1
