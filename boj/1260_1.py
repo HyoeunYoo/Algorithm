@@ -1,4 +1,5 @@
 # [백준] 1260번 - DFS와 BFS (실버 2)
+# 인접 리스트, 정렬
 # 2024.03.20 - 34068 KB / 76 ms
 # [O] 그래프 이론 / 그래프 탐색 / 너비 우선 탐색 / 깊이 우선 탐색
 
@@ -9,7 +10,7 @@ from collections import deque
 input = sys.stdin.readline
 N, M, V = map(int, input().split())
 
-# 그래프로 변환
+# 그래프로 변환 - 노드 번호 인접 리스트
 graph = [[] for _ in range(N + 1)]
 for _ in range(M):
     a, b = map(int, input().split())
